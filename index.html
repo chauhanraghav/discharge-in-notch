@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Notch and Rectangular Notch Calculator</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+    <h1>V-Notch and Rectangular Notch Calculator</h1>
+
+    <!-- V-Notch Input Table -->
+    <h2>V-Notch</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Symbol</th>
+            <th>Unit</th>
+            <th>Input Value</th>
+        </tr>
+        <tr>
+            <td>Head (Height of Water)</td>
+            <td>H</td>
+            <td>meters</td>
+            <td><input type="number" id="vNotchHead" placeholder="Enter H"></td>
+        </tr>
+        <tr>
+            <td>Angle of V-Notch</td>
+            <td>&theta;</td>
+            <td>degrees</td>
+            <td><input type="number" id="vNotchAngle" placeholder="Enter θ"></td>
+        </tr>
+    </table>
+
+    <!-- Rectangular Notch Input Table -->
+    <h2>Rectangular Notch</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Symbol</th>
+            <th>Unit</th>
+            <th>Input Value</th>
+        </tr>
+        <tr>
+            <td>Head (Height of Water)</td>
+            <td>H</td>
+            <td>meters</td>
+            <td><input type="number" id="rectHead" placeholder="Enter H"></td>
+        </tr>
+        <tr>
+            <td>Width of Notch</td>
+            <td>B</td>
+            <td>meters</td>
+            <td><input type="number" id="rectWidth" placeholder="Enter B"></td>
+        </tr>
+    </table>
+
+    <!-- Calculate Button -->
+    <button id="calculateBtn">Calculate</button>
+
+    <!-- Output Table -->
+    <h2>Output Results</h2>
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Symbol</th>
+            <th>Unit</th>
+            <th>Calculated Value</th>
+        </tr>
+        <tr>
+            <td>V-Notch Discharge</td>
+            <td>Qv</td>
+            <td>m<sup>3</sup>/s</td>
+            <td id="vNotchOutput">--</td>
+        </tr>
+        <tr>
+            <td>Rectangular Notch Discharge</td>
+            <td>Qr</td>
+            <td>m<sup>3</sup>/s</td>
+            <td id="rectNotchOutput">--</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>
